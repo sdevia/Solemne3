@@ -24,7 +24,7 @@ def inscripcion(request):
 
 
 def index(request):
-    response = requests.get('http://api.ipstack.com/check?access_key=ed45289eb6aa84378442d6c312320945')
+    response = requests.get('http://api.ipstack.com/check?access_key=4ef069caf39169ec8908e220e4d69452')
     data = response.json()
     
     return render(request,'index.html',{'latitud': data['latitude'],'longitud': data['longitude'],'ciudad': data['city'],'region': data['region_code'],'ip': data['ip'], 'pais': data['country_name'] })    

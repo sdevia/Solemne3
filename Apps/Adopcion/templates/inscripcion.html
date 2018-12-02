@@ -27,8 +27,8 @@ date_range
                 <img class="responsive-img" src="{% static 'imagenes\img\logo.png' %}">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="index">Inicio</a></li>
+                    <li><a href="">Galeria</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +44,7 @@ date_range
         </blockquote>
 
 
-        <form id='Formulario' name='Formulario'method="POST" acton="index">
+        <form id='Formulario' name='Formulario'method="POST" action="index">
             {% csrf_token %}
             <div class="row">
                 <div class="col s12 m6">
@@ -116,7 +116,7 @@ date_range
 
                 <div class="col s12 m6">
                     <div>
-                        <i class="material-icons prefix">map</i>
+                        <i class="material-icons prefix black-text">map</i>
                         <label for="regiones">Región</label>
                         <select id="regiones" name='regiones' class="black-text">
                         </select>
