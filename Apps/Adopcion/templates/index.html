@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <nav>
+                    <div class="nav-wrapper green">
+                        <img class="responsive-img" src="{% static 'imagenes\img\logo.png' %}">
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="inscripcion">Inscripcion</a></li>
+                            <li><a href="galeria">Galeria</a></li>
+                            <li><a href="quienesSomos">Quienes Somos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="inscripcion">Inscripcion</a></li>
+                    <li><a href="galeria">Galeria</a></li>
+                    <li><a href="quienesSomos">Quienes Somos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="slider">
+                    <ul class="slides">
+
+                        <li>
+                            <img src="{% static 'adoptados/Apolo.jpg' %}" alt="">
+                            <div class="caption center-align blue-text">
+                                <h3>Adopta a tu primer compañero.</h3>
+                                <h5 class="light">No dejes pasar esta oportunidad.</h5>
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src="{% static 'adoptados/Duque.jpg' %}" alt="">
+                            <div class="caption right-align blue-text ">
+                                <h3>Ellos te estan esperando.</h3>
+                                <h5 class="light">para entregarte su amistad.</h5>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <img src="{% static 'adoptados/Tom.jpg' %}" alt="">
+                            <div class="caption left-align blue-text">
+                                <h3>Se parte del cambio.</h3>
+                                <h5 class="light">Y unete a nosotros en esta iniciativa.</h5>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'img/rescate.jpg' %}">
+                        <span class="card-title">Rescate Perruno</span>
+                    </div>
+
+                    <div class="card-content">
+                        <p> ATENCIÓN LAS PROVIDENCIA : si ven algún perrito en la calle en estos días de lluvia pueden llamar al 1402 para que sea albergado temporalmente 🏠. Esperamos todas las comunas sigan el mismo ejemplo y todos ayuden en esta causa!</p>
+                    </div>
+
+                    <div class="card-action">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'img/crowfunding.jpg' %}" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="titulo">
+                            <h5>CROWDFUNDING</h5>
+                        </p>
+                        <p class="subtitulo">Financiamiento</p>
+                    </div>
+                    <hr>
+                    <p>
+                        Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.
+                    </p>
+                    <button type="button" name="button ">CAMPAÑAS</button>
+                </div>
+            </div>
+            <div class="col s6 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'adoptados/Duque.jpg' %}">
+                        <span class="card-title">Rescate</span>
+                    </div>
+                    <div class="card-content">
+                        <p>ayudanos a rescatar mas perrito y darles un hogar. </p>
+                        <p> Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un hogar</p>
+                    </div>
+                    <div class="card-action">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s6 m6">
+                <div class="card-video">
+                    <div class="”video-responsive”">
+                        <iframe src="https://www.youtube.com/embed/5dVQC_euOPI" frameborder="0" allowfullscreen="allowfullscreen">
+                        </iframe>
+                    </div>
+                    <div class="video-content">
+                        <p>Más de 200 perros han tenido la oportunidad de tener una segunda vida y nueva familia tras ser rescatados por el gobierno de la capital de Aguascalientes. Un programa de obediencia canina busca adiestrar a los próximos campeones de torneos de exhibición salvados de las calles</p>
+                        <p> </p>
+                    </div>
+                    <div class="card-action">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="page-footer green">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h3 class="white-text green">Contactanos</h3>
+                        <p class="grey-text text-lighten-4">puede tener mas informacion en nuestras redes sociales </p>
+                        <hr>
+                        <p>
+                            Estamos ubicados en calle Antonio Varas #3456 Providencia Santiago
+                        </p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Redes Sociales</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!"></a>youtube</li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Mis Perris fono: + 56 9 98765431
+                    <a class="grey-text text-lighten-4 right" href="#!"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                duration: 500,
+                indicators: true,
+
+            });
+        });
+
+    </script>
+    <script>
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: onfocus
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.materialboxed').materialbox();
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fixed-action-btn').floatingActionButton();
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {});
+
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+
+        });
+
+    </script>
+
+    </div>
+
+</body>
+
+</html>
